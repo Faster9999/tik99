@@ -1,0 +1,160 @@
+/* Базовые стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    min-height: 60vh;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.infographics p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.partners .partner-logo {
+    max-width: 120px;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.partners .partner-logo:hover {
+    transform: scale(1.1);
+}
+
+.how-it-works {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.join .btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}
+
+.highlight {
+    background: rgba(255, 255, 255, 0.3);
+    transition: background 0.5s;
+}
+
+/* Стили для страницы регистрации */
+#register-form, #terms {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-range {
+    margin-bottom: 10px;
+}
+
+.form-check {
+    margin-top: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Стили для страницы дохода */
+.progress {
+    height: 20px;
+    margin-top: 15px;
+}
+
+/* Стили для таблицы VIP-уровней */
+.vip-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vip-table th, .vip-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.vip-table th {
+    background-color: #f2f2f2;
+}
+
+/* Стили для бонусов и дефицита */
+.text-danger {
+    color: #dc3545; /* Красный цвет для элементов дефицита */
+}
+
+/* Стили для бокового меню настроек */
+.settings-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.settings-toggle {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.settings-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.settings-content.show {
+    display: block;
+}
+
+.settings-content .list-group-item {
+    border: none;
+    padding: 5px 10px;
+}
+
+.settings-content a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.settings-content a:hover {
+    color: #0056b3;
+}
+.settings-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.settings-content.show {
+    display: block;
+    opacity: 1;
+}

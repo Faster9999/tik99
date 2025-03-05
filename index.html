@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<body>
+    <!-- Экран 1: Заголовок и инфографика -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">TikTok 01001 — Мультиплатформа с блокчейн верификацией, которая объединяет дистрибуцию контента и краудфандинг, где блогеры продвигаются, а пользователи зарабатывают!</h1>
+            <p class="lead">Инновационная экосистема для монетизации Reels, которая помогает блогерам и сотрудникам продвигаться, а пользователям зарабатывать стабильный доход благодаря передовой технологии распределённых выплат.</p>
+            <div class="infographics row justify-content-center mt-4">
+                <div class="col-md-4">
+                    <p><strong>90,000,000 ₽</strong><br>выплачено за последний месяц</p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>100,000+</strong><br>заданий ежедневно</p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Blockchain</strong><br>для прозрачности выплат</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Экран 2: Партнёрские логотипы и гео-данные -->
+    <section class="partners container my-5">
+        <h2 class="text-center mb-4">Наши партнёры и доступность</h2>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-6 col-md-2"><img src="ivan-sinyak.png" alt="Иван Синяк" class="img-fluid partner-logo"></div>
+            <div class="col-6 col-md-2"><img src="ksenia-rebrova.png" alt="Ксения Реброва" class="img-fluid partner-logo"></div>
+            <div class="col-6 col-md-2"><img src="zhang-wei.png" alt="Zhang Wei" class="img-fluid partner-logo"></div>
+            <div class="col-6 col-md-2"><img src="john-doe.png" alt="John Doe" class="img-fluid partner-logo"></div>
+            <div class="col-6 col-md-2"><img src="irina-kotova.png" alt="Ирина Котова" class="img-fluid partner-logo"></div>
+        </div>
+        <p class="text-center mt-4">Доступно в: <strong>Россия, Китай, Германия</strong></p>
+    </section>
+
+    <!-- Экран 3: Как это работает (коротко) -->
+    <section class="how-it-works bg-light py-5 text-center">
+        <h2 class="mb-4">Как это работает</h2>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm fade-in">
+                        <div class="card-body">
+                            <i class="bi bi-person-check display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Заработок для всех</h5>
+                            <p class="card-text">Выполняйте задания от брендов и зарабатывайте на просмотре Reels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm fade-in" style="animation-delay: 0.2s;">
+                        <div class="card-body">
+                            <i class="bi bi-shield-lock display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Прозрачные выплаты</h5>
+                            <p class="card-text">Используем алгоритмы краудсорсинга и токенизацию для надёжности.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm fade-in" style="animation-delay: 0.4s;">
+                        <div class="card-body">
+                            <i class="bi bi-globe display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">По всему миру</h5>
+                            <p class="card-text">Более 50,000 пользователей, поддержка рублей, долларов, юаней и евро.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Экран 4: Кнопка "Присоединиться" -->
+    <section class="join container text-center my-5">
+        <h3 class="mb-4">Готовы присоединиться?</h3>
+        <p>Выберите свою роль и начните зарабатывать или продвигаться уже сегодня!</p>
+        <p class="text-danger">Регистрация возможна только через реферальный номер.</p>
+        <div class="btn-group" role="group">
+            <a href="register.html?role=employee" class="btn btn-success btn-lg mx-2">Как сотрудник</a>
+            <a href="register.html?role=blogger" class="btn btn-success btn-lg mx-2">Как блогер</a>
+        </div>
+    </section>
+
+    <!-- Боковое меню настроек -->
+    <aside class="settings-menu">
+        <button class="btn btn-light settings-toggle" onclick="toggleSettings()">
+            <i class="bi bi-gear"></i>
+        </button>
+        <div class="settings-content" id="settings-content">
+            <h5>Настройки</h5>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">Настройки аккаунта</a></li>
+                <li class="list-group-item"><a href="#">Изменение пароля</a></li>
+                <li class="list-group-item"><a href="profile.html">Личные данные</a></li>
+                <li class="list-group-item"><a href="withdraw.html">Вывод средств</a></li>
+                <li class="list-group-item"><a href="referrals.html">Реф система</a></li>
+                <li class="list-group-item"><a href="reviews.html">Отзывы</a></li>
+                <li class="list-group-item"><a href="bonuses.html">Бонусы</a></li>
+                <li class="list-group-item"><a href="about.html">О компании</a></li>
+                <li class="list-group-item"><a href="privacy.html">Политика</a></li>
+                <li class="list-group-item"><a href="#" target="_blank">Приложение iOS/Android</a></li>
+                <li class="list-group-item"><a href="vip.html">VIP подписка</a></li>
+                <li class="list-group-item"><a href="#" onclick="logout()">Выход</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Нижнее меню -->
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container justify-content-around">
+            <a href="earnings.html" class="nav-link">Заработок</a>
+            <a href="balance.html" class="nav-link">Баланс</a>
+            <a href="support.html" class="nav-link">Поддержка</a>
+            <a href="withdraw.html" class="nav-link">Вывод</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+        </div>
+    </nav>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

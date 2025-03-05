@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - TikTok 01001</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Отзывы пользователей</h2>
+        <section class="mb-5">
+            <h3 class="text-center mb-4">Отзывы</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <p>"Не очень сложно, прошел обучение и выполнил 200 заданий. Уже третий месяц работаю, зарабатываю стабильно!"</p>
+                            <p><small>Пользователь #1</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <p>"Проверил, Заработал первые деньги, понял, что платформа реально работает. Сейчас работаю на уровне «Гуру»."</p>
+                            <p><small>Пользователь #2</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <p>"Идея интересная, но думал, что это как-то слишком сложно. Оказалось, что за 2 недели я набрал уровень и зарабатываю по 50 рублей за задание."</p>
+                            <p><small>Пользователь #3</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"Не очень сложно, прошел обучение и выполнил 200 заданий. Уже третий месяц работаю, зарабатываю стабильно!"</p>
+                        <p class="text-muted">— Алексей, Стажер</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"Проверил, заработал первые деньги, понял, что платформа реально работает. Сейчас работаю на уровне «Гуру»."</p>
+                        <p class="text-muted">— Иван, Гуру</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text">"Идея интересная, но думал, что это как-то слишком сложно. Оказалось, что за 2 недели я набрал уровень и зарабатываю по 50 рублей за задание."</p>
+                        <p class="text-muted">— Мария, Профи</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-center mt-5">Лучшие пользователи месяца</h3>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-3 text-center">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5>Иван</h5>
+                        <p>Заработок: 102,000 ₽</p>
+                        <p>Уровень: Гуру</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5>Елена</h5>
+                        <p>Заработок: 37,440 ₽</p>
+                        <p>Уровень: Мастер</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="settings-menu">
+        <button class="btn btn-light settings-toggle" onclick="toggleSettings()">
+            <i class="bi bi-gear"></i>
+        </button>
+        <div class="settings-content" id="settings-content">
+            <h5>Настройки</h5>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">Настройки аккаунта</a></li>
+                <li class="list-group-item"><a href="#">Изменение пароля</a></li>
+                <li class="list-group-item"><a href="profile.html">Личные данные</a></li>
+                <li class="list-group-item"><a href="withdraw.html">Вывод средств</a></li>
+                <li class="list-group-item"><a href="referrals.html">Реф система</a></li>
+                <li class="list-group-item"><a href="reviews.html">Отзывы</a></li>
+                <li class="list-group-item"><a href="bonuses.html">Бонусы</a></li>
+                <li class="list-group-item"><a href="about.html">О компании</a></li>
+                <li class="list-group-item"><a href="privacy.html">Политика</a></li>
+                <li class="list-group-item"><a href="#" target="_blank">Приложение iOS/Android</a></li>
+                <li class="list-group-item"><a href="vip.html">VIP подписка</a></li>
+                <li class="list-group-item"><a href="#" onclick="logout()">Выход</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container justify-content-around">
+            <a href="earnings.html" class="nav-link">Заработок</a>
+            <a href="balance.html" class="nav-link">Баланс</a>
+            <a href="support.html" class="nav-link">Поддержка</a>
+            <a href="withdraw.html" class="nav-link">Вывод</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+        </div>
+    </nav>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
